@@ -1,14 +1,15 @@
+package example.untitled.example;
+
 public class Primes {
-	public static void main(String[] args) {
-		for (int j=2; j<=100; j++) {
-			if (isPrime(j)==true)
-				System.out.print("\n"+j);
-		}
-		public static boolean isPrime(int n) {
-			for (int i = 2; i < n; i++)
-				if (n % i == 0)
-					return false;
-			return true;
-		}
-	}
+        public static void main(String[] args) {
+            for (int j = 2; j <= 100; j++)
+                if (isPrime(j))
+                    System.out.print(j + " ");
+        }
+            public static boolean isPrime(int n) {
+                for (int i = 2; i < n; i++)
+                    if (n % i == 0)
+                        return false;
+                return true;
+            }
 }
